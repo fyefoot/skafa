@@ -9,7 +9,7 @@
       console.log('skafa is running locally - page name is \'' + fileName + '\'')
     }
     else {
-      alert('skafa is running hosted - page name is \'' + fileName + '\'')
+      console.log('skafa is running hosted - page name is \'' + fileName + '\'')
         // // Load gtag.js
         // const script = document.createElement('script');
         // script.async = true;
