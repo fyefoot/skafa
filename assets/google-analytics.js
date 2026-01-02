@@ -10,18 +10,18 @@
     }
     else {
       console.log('skafa is running hosted - page name is \'' + fileName + '\'')
-        // // Load gtag.js
-        // const script = document.createElement('script');
-        // script.async = true;
-        // script.src = 'https://www.googletagmanager.com/gtag/js?id=G-6RGWLHBNBZ';
-        // document.head.appendChild(script);
+        // Load gtag.js
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-6RGWLHBNBZ';
+        document.head.appendChild(script);
 
-        // // Init GA
-        // window.dataLayer = window.dataLayer || [];
-        // function gtag() { dataLayer.push(arguments); }
-        // window.gtag = gtag;
+        // Init GA
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        window.gtag = gtag;
 
-        // gtag('js', new Date());
-        // gtag('config', 'G-6RGWLHBNBZ');
+        gtag('js', new Date());
+        gtag('config', 'G-6RGWLHBNBZ');
     }
 })();
